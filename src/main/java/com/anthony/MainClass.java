@@ -2,6 +2,7 @@ package com.anthony;
 
 import com.anthony.fightnum.FightNum;
 
+import java.util.Scanner;
 
 /**
  * Created by CHENDONG239 on 2017-03-06.
@@ -9,11 +10,13 @@ import com.anthony.fightnum.FightNum;
 public class MainClass {
 
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        String inputStr=scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Star,CurLevel,CurExp,FightExp");
+        String inputStr = scanner.nextLine();
 //        System.out.println(inputStr);
 //        int star, int curLevel, int curExp, int fightExp
-        String inputStr = "2,1,0,2552";
+
+        //String inputStr = "2,1,0,2552";
         String param[] = inputStr.split(",");
         int star = Integer.valueOf(param[0]);
         int curLevel = Integer.valueOf(param[1]);
